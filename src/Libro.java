@@ -8,5 +8,26 @@
  * @author Sebastian
  */
 public class Libro {
+    private String Titulo;
+    private String autor;
+    private int NumPag;
+    
+  public Libro(){
+      Titulo =  "Desconocido";
+      autor = "Desconocido";
+      NumPag = 0;
+  }
+  
+  public Libro(String Titulo, String autor, int NumPag){
+      this.Titulo = Titulo;
+      this.autor = autor;
+      this.NumPag = NumPag;
+  }
+  
+  public String ToString(){
+      return "libro [Titulo: " + Titulo + ", autor: " + autor 
+              + ", numero de paginas: " + NumPag + "]";
+  }
+  
     
 }
