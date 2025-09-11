@@ -24,7 +24,7 @@ public class Libro {
       this.NumPag = NumPag;
   }
   
-  public String ToString(){
+  public String toString(){
       return "libro [Titulo: " + Titulo + ", autor: " + autor 
               + ", numero de paginas: " + NumPag + "]";
   }
