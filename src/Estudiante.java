@@ -27,4 +27,9 @@ public class Estudiante {
       this(edad, nombre);
       this.curso = curso;
   }
+  
+  public String toString(){
+      return "[El estudiante identificado como: " + nombre + " tiene: " + edad 
+              + " años y cursa el grado: " + curso + "]";
+  }
 }
