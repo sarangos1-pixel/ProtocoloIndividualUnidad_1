@@ -8,5 +8,23 @@
  * @author Sebastian
  */
 public class Estudiante {
+    public String nombre;
+    public int edad;
+    public int curso;
     
+  public Estudiante(){
+      nombre = "Desconocido";
+      edad = 0;
+      curso = 0;
+  }
+  
+  public Estudiante(int edad, String nombre){
+      this.edad = edad;
+      this.nombre = nombre;
+  }
+  
+  public Estudiante(int edad, String nombre, int curso){
+      this(edad, nombre);
+      this.curso = curso;
+  }
 }
