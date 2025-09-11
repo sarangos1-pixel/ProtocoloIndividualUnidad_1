@@ -13,6 +13,7 @@ public class ProyectoIntegrador {
     public static void main(String[] args) {
         Scanner key = new Scanner(System.in);
         
+     // libro   
         Libro libro_1 = new Libro();
         System.out.println("tu libro: " + libro_1);
         
@@ -36,7 +37,7 @@ public class ProyectoIntegrador {
         System.out.println("detalles de tu libro: " + TuLibro);
         
         
-        //cuenta bancaria
+     //cuenta bancaria
         System.out.println("****CUENTA BANCARIA****");
         
         System.out.println("Ingrese su nombre de usuario");
@@ -56,6 +57,24 @@ public class ProyectoIntegrador {
         System.out.println(usuario + " estos son los detalles de su cuenta bancaria: " + CuentaUsuario);
         
         
+     //Estudiante
+        System.out.println("****ESTUADIANTE****");
+        
+        Estudiante estudiante_1 = new Estudiante();
+        System.out.println(estudiante_1);
+        
+        // Datos ingresados(estudiante)
+        System.out.println("Ingrese su nombre: ");
+        String nombre = key.nextLine();
+        
+        System.out.println("Ingrese su edad");
+        int edad = key.nextInt();
+        
+        System.out.println("Ingrese su curso");
+        int curso = key.nextInt();
+     
+        Estudiante estudiante_2 = new Estudiante(edad, nombre, curso);
+        System.out.println(estudiante_2);
         
     }
    
