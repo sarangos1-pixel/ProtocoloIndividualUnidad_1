@@ -28,6 +28,9 @@ public class CuentaBancaria {
         this.TipoCuenta = TipoCuenta;
         this.saldo = saldo;
     }
-  
+    public String toString(){
+      return "[Numero de cuenta: " + NumeroCuenta + ", tipo de cuenta: " + TipoCuenta 
+              + ", saldo: " + saldo + "]";
+    }
     
 }
